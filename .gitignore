@@ -1,6 +1,4 @@
 vendor/
 .env
 
-web/intro/assets/graphics/2d-special-effects\.zip
-
-web/intro/assets/music/5 Action Chiptunes By Juhani Junkala\.zip
+*\.zip
