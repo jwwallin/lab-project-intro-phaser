@@ -46,7 +46,7 @@ function main() {
       showTitle();
       game.time.events.add(8500, showText, this);
       game.time.events.add(79500, flySpaceship, this);
-      game.time.events.add(109500, timeEvents, this);
+      game.time.events.add(120000, timeEvents, this);
     }
 
     function showTitle() {
