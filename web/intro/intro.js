@@ -99,11 +99,11 @@ function main() {
       ship.addChild(effect);
       ship.addChild(effect2);
 
-      ship.scale.set(30);
+      ship.scale.set(20);
 
       game.add.tween(ship).to({ y: '-50' }, 30000, Phaser.Easing.Linear.Out, true);
-      game.add.tween(ship.scale).to(0, 28000, Phaser.Easing.Linear.Out, true);
-      game.add.tween(ship).to({ alpha: 0 }, 1000, Phaser.Easing.Linear.In, true, 28500);
+      game.add.tween(ship.scale).to(0, 28000, Phaser.Easing.Quadratic.Out, true);
+      game.add.tween(ship).to({ alpha: 0 }, 1000, Phaser.Easing.Linear.In, true, 29000);
       game.add.tween(ship).to( { angle: 360 }, 10000, Phaser.Easing.Linear.None, true, 0, -1);
     }
 
