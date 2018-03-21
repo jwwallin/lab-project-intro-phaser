@@ -78,7 +78,7 @@ function main() {
         });
       text.anchor.setTo(0.5, 0);
 
-      let textTween = game.add.tween(text).to({ y: -(game.height * 3) }, 71000, Phaser.Easing.Linear.InOut, true);
+      let textTween = game.add.tween(text).to({ y: -(game.height * 4) }, 71000, Phaser.Easing.Linear.InOut, true);
     }
 
     function flySpaceship() {
@@ -102,7 +102,7 @@ function main() {
       ship.scale.set(30);
 
       game.add.tween(ship).to({ y: '-50' }, 30000, Phaser.Easing.Linear.Out, true);
-      game.add.tween(ship.scale).to({ x: 0, y: 0 }, 28000, Phaser.Easing.Linear.Out, true);
+      game.add.tween(ship.scale).to(0, 28000, Phaser.Easing.Linear.Out, true);
       game.add.tween(ship).to({ alpha: 0 }, 1000, Phaser.Easing.Linear.In, true, 28500);
       game.add.tween(ship).to( { angle: 360 }, 10000, Phaser.Easing.Linear.None, true, 0, -1);
     }
